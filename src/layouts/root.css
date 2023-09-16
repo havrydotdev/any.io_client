@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    main {
+        @apply container mx-auto mt-10;
+    }
+
+    main header h1 {
+        @apply text-3xl font-light;
+    }
+
+    main header div h2 {
+        @apply text-base font-medium;
+    }
+
+    .shop {
+        @apply font-bold;
+    }
+
+    .root {
+        @apply flex justify-between;
+    }
+
+    .profile_block {
+        @apply flex gap-2;
+    }
+}
