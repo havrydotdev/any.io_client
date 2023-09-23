@@ -3,14 +3,14 @@ import "./header.css";
 
 const Header = () => {
   return (
-    <header className="root">
+    <header className='root'>
       <h1>
-        <span className="shop">shop</span>cart
+        <span className='shop'>shop</span>cart
       </h1>
-      <div className="profile_block">
+      <a className='profile_block' href='/profile'>
         <ProfileIcon />
         <h2>Sign In</h2>
-      </div>
+      </a>
     </header>
   );
 };
