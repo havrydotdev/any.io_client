@@ -1,8 +1,12 @@
+import RootLayout from "../../layouts/root";
+
 const ProfilePage = () => {
   return (
-    <div>
-      <h1>Profile Page</h1>
-    </div>
+    <RootLayout>
+      <div>
+        <h1>Profile Page</h1>
+      </div>
+    </RootLayout>
   );
 };
 

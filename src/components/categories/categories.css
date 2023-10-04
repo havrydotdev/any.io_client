@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  section a.category {
+    @apply flex gap-7 mt-5 capitalize text-gray text-lg font-medium hover:text-gray/[.80] transition-all;
+  }
+}

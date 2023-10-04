@@ -5,6 +5,11 @@ export default {
     extend: {
       colors: {
         "dark-gray": "#808080",
+        "dark-orange": "#FFAE5D",
+        gray: "#606060",
+      },
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
       },
     },
   },

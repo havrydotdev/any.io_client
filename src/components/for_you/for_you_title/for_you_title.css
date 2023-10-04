@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  div.for_you_title {
+    @apply flex justify-center items-center;
+    @apply font-light text-7xl;
+    @apply max-w-lg h-[740px];
+  }
+
+  span.for_you_cool_things {
+    @apply text-7xl font-bold text-dark-orange;
+  }
+}

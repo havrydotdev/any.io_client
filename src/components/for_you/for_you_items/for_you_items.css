@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  div.for_you_items_container {
+    @apply w-full mt-10;
+  }
+
+  div.for_you_items_title_container {
+    @apply text-2xl font-semibold border-b-2 border-solid border-dark-orange;
+  }
+}

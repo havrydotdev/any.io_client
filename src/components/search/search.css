@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  section {
+    @apply flex justify-between mt-5;
+  }
+
+  section div {
+    @apply relative;
+  }
+
+  section div svg {
+    @apply absolute top-5 right-5;
+  }
+
+  section div input {
+    @apply w-[510px] p-4 rounded-[20px];
+    @apply border-[1px] border-dark-gray/[0.5] outline-none;
+  }
+
+  section a.delivery {
+    @apply flex gap-2 bg-dark-orange p-4 h-14 hover:bg-dark-orange/[.80] transition-all;
+    @apply text-black text-base font-semibold;
+    @apply rounded-[20px];
+  }
+}

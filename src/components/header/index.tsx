@@ -1,16 +1,23 @@
+import { useSelector } from "react-redux";
 import ProfileIcon from "../icons/profile";
 import "./header.css";
+import { selectUser } from "../../../store";
+import { Link } from "react-router-dom";
 
 const Header = () => {
+  const user = useSelector(selectUser);
+
   return (
     <header className='root'>
       <h1>
-        <span className='shop'>shop</span>cart
+        <Link to='/'>
+          <span className='shop'>shop</span>cart
+        </Link>
       </h1>
-      <a className='profile_block' href='/profile'>
+      <Link className='profile_block' to={user ? "/profile" : "/login"}>
         <ProfileIcon />
-        <h2>Sign In</h2>
-      </a>
+        {user ? <h2>{user.name}</h2> : <h2>Sign In</h2>}
+      </Link>
     </header>
   );
 };

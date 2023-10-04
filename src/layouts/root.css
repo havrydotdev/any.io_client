@@ -4,7 +4,7 @@
 
 @layer utilities {
   main {
-    @apply container mx-auto mt-10;
+    @apply container mx-auto mt-10 font-poppins;
   }
 
   main hr {
