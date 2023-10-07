@@ -8,6 +8,17 @@
   }
 
   div.for_you_items_title_container {
-    @apply text-2xl font-semibold border-b-2 border-solid border-dark-orange;
+    @apply text-2xl font-semibold;
+    @apply border-b-2 border-solid border-dashed;
+    @apply border-dark-orange;
+    @apply py-3;
+  }
+
+  div.for_you_items_title_container h2.for_you_items_title {
+    @apply ml-5 inline-block;
+  }
+
+  ul.for_you_items {
+    @apply flex justify-between flex-wrap mt-7;
   }
 }

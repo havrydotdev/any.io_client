@@ -1,7 +1,6 @@
 import axios from "axios";
 import "./categories.css";
 import { useQuery } from "react-query";
-import { Category } from "../../../interfaces";
 import { Link } from "react-router-dom";
 
 const fetchCategories = async (): Promise<Category[]> => {

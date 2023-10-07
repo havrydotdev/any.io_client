@@ -1,8 +1,7 @@
-export default interface User {
-  id: number;
+type User = {
   email: string;
   phone: string;
   name: string;
   lastname: string;
   patronymic: string;
-}
+};
